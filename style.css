@@ -1,0 +1,122 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    min-height: 100vh;
+    font-family:'Segoe UI',sans-serif';
+}
+
+h1 {
+    text-align:center;
+    margin-bottom: 50px;
+}
+
+.weather-cards {
+    display:inline-block;
+    background-color:rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border:1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    padding:2.5rem;
+    color:black;
+    box-shadow:0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    border-radius:20px;
+    min-height: 450px;
+    min-width: 350px;
+}
+
+.class-container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+    margin-bottom:20px;
+}
+
+.search-box {
+    display:flex;
+    justify-content:center;
+    gap:5px;
+    margin:20px 0;
+}
+
+#cityInput {
+    padding:10px;
+    width:250px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    font-family:sans-sarif;
+}
+
+#searchBtn {
+    padding:10px 15px;
+    background-color:#f8d7da;
+    border:1px solid #f5c6cb;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+#cityNameDisplay {
+    font-size:2rem;
+    font-weight: 700;
+    margin-bottom:10px;
+}
+
+#tempDisplay {
+    font-size:3rem;
+    font-weight:800;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#tempDisplay::after {
+    content:"°C";
+    font-size:2rem;
+    vertical-align: top;
+}
+
+#descDisplay {
+    text-transform:capitalize;
+    font-size:2.2rem;
+    letter-spacing: 1px;
+    margin-bottom:30px;
+}
+
+.details {
+    display:flex;
+    justify-content:space-between;
+    border-top:1px solid rgba(0,0,0,0.1);
+    padding-top:20px;
+}
+
+.detail-value {
+    font-weight:600;
+    padding-top:3px;
+    font-size:1.2rem;
+}
+
+#windDisplay {
+    font-size:1.6rem;
+    opacity:0.7;
+}
+
+#humidityDisplay {
+    font-size:1.6rem;
+    opacity:0.7;
+}
+
+.detail-item {
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}

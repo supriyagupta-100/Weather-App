@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Weather App</h1>
+
+    <div class="class-container">
+    <div class="search-box">
+        <input type="text" list="indian-cities" id="cityInput" placeholder="Search city in India...">
+        <datalist id="indian-cities"></datalist>
+        <button id="searchBtn">Search</button>
+    </div>
+     
+    <div class="weather-cards">
+        <h2 id="cityNameDisplay">City Name</h2>
+        <h1 id="tempDisplay">-- </h1>
+        <p id="descDisplay">Description</p>
+        <div class="details">
+            <div class="detail-item">
+             <span id="humidityDisplay">Humidity</span>
+             <span class="detail-vlaue">--%</span>
+            </div>
+            <div class="detail-item">
+                <span id="windDisplay">Wind</span>
+                <span class="detail-vlaue">--km/h</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
